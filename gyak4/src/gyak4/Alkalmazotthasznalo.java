@@ -4,7 +4,7 @@ public class Alkalmazotthasznalo {
 
 	public static void main(String[] args) {
 		
-		Alkalmazott alkalmazottobj = new Alkalmazott();
+		Alkalmazott alkalmazottobj = new Alkalmazott("xy", 25);
 		// alkalmazottobj.nev="Paksi Andras";
 		// alkalmazottobj.fizetes=10;
 		// alkalmazottobj.fizetesNovelese(5);
@@ -16,7 +16,7 @@ public class Alkalmazotthasznalo {
 		System.out.println(alkalmazottobj);
 		
 		
-		Alkalmazott alkalmazott2 = new Alkalmazott();
+		Alkalmazott alkalmazott2 = new Alkalmazott("xy", 25);
 
 		alkalmazott2.setNev("Laszlo Maria");
 		alkalmazott2.setFizetes(35);
@@ -27,7 +27,7 @@ public class Alkalmazotthasznalo {
 		Alkalmazott[] alkalmazottak = new Alkalmazott[5];
 
 		for (int i = 0; i < alkalmazottak.length; i++) {
-			alkalmazottak[i] = new Alkalmazott();
+			alkalmazottak[i] = new Alkalmazott("xy", 25);
 			alkalmazottak[i].setNev("XY");
 			alkalmazottak[i].setFizetes((long) (Math.random() * 50));
 			System.out.println(alkalmazottak[i]);
