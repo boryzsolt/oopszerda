@@ -1,7 +1,16 @@
 package masik;
 
-import sajat.Szinezheto;
+public class Pont {
+	private double x;
+	private double y;
+	
+	public Pont(double x, double y) {
+		this.x = x;
+		this.y = y;
+	}
 
-public class Pont implements Szinezheto {
-
+	@Override
+	public String toString() {
+		return "x: " + x + ", y: " + y;
+	}	
 }
